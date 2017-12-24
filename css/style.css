@@ -1,0 +1,197 @@
+*{
+	margin: 0px;
+	padding: 0px;
+}
+
+body {
+	font: 18px/21px verdana;
+	color: #222;
+}
+
+.navigation {
+	font-size: 17px;
+	width: 100%;
+ 	margin: 0 auto;
+ 	overflow-x: hidden;
+
+ 	color: white;
+ 	background-color:  #BB3DFF;/*rgba(187, 61, 255, 0.2);  #A291CC; /* #9E84E0;/* #A682DF;/* #B97EDE;/* #D9BCE3;/* rgb(100,200,230);*/
+ 	/* border-bottom: 2px solid black; */
+ 	
+ 	font-weight: bold;
+ 	letter-spacing: 2px;
+ 	text-transform: uppercase;
+ 	line-height: 24px;
+ }
+ 
+.navigation  li{
+	display: inline-block;
+	padding: 0;
+	position: relative;
+	float: right;
+	left: 0%;
+}
+
+.navigation a:hover {
+	background: #FF0088;/* #FF0056; */
+}
+
+.navigation ul {
+ 	list-style-type: none;
+	list-style-position: inside;
+	margin: 0;
+	padding: 0;
+}
+
+.navigation a{
+	padding-left: 20px;
+	padding-right: 20px;
+	padding-top: 7px;
+	padding-bottom: 7px;
+	display: block;
+	
+	color: white;
+	text-decoration: none;
+}
+
+/* #inc {
+	font-size: 15px;
+	color: white;
+} */
+
+#header {
+	margin: 0 auto;
+	overflow-x: hidden;
+	overflow-y: hidden;
+
+	background-image: url('../img/background.jpg');
+	background-position: 100% center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	max-width: 100%;
+	height: 450px;
+	border-bottom: 20px solid #BB3DFF;
+}
+
+#header h1 {
+	margin: 15%;
+	text-align: center;
+	font: 30/34px verdana;
+	color: white;
+	letter-spacing: 5px;
+}
+
+#header p {}
+
+#header .call {}
+
+#main {
+	overflow-x: hidden;
+	overflow-y: hidden;
+	width: 100%;
+	height: 600px;
+	background-attachment: local;
+	/*border: 5px dotted rgba(255, 200, 0, 0.9);*/
+	/*background-color: pink; /* rgba(255, 218, 97, 0.8); /* #FFDA61; */
+}
+
+#main .row1 {
+	width: 100%;
+	height: 300px;
+	background-color: black;
+}
+
+#main .row2 {
+	width: 100%;
+	height: 300px;
+	background-color: black;
+}
+
+#main .row1 .img1,
+#main .row1 .img2,
+#main .row1 .img3,
+#main .row2 .img4,
+#main .row2 .img5,
+#main .row2 .img6 {
+	display: block;
+	padding: 0;
+	width: 33.3%;
+	float: left;
+	left: 0;
+	height: 300px;
+	background-position: 100% center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: scroll;
+}
+
+
+#main .img1 {
+	background-image: url('../img/Seoul.jpg');
+}
+
+#main .img2 {
+	background-image: url('../img/China.jpg');
+}
+
+#main .img3 {
+	background-image: url('../img/China.jpg');
+}
+
+#main .img4 {
+	background-image: url('../img/Vietnam.jpg');
+}
+
+#main .img5 {
+	background-image: url('../img/Vietnam.jpg');
+}
+
+#main .img6 {
+	background-image: url('../img/Vietnam.jpg');
+}
+
+#main .img1 .tour:hover {
+	background-color: rgba(255, 200, 0, 1.0);
+}
+
+
+#main .img2:hover {
+	background-color: #FF0088;
+}
+
+#main .tour {
+	/*background-color: rgba(255, 200, 0, 0.5);*/
+	width: 100%;
+	height: 300px;
+	float: left;
+
+}
+
+#main .head {
+	padding-top: 10%;
+	color: #FF0088;
+	text-align: center;
+	font-weight: bold;
+	font-size: 24px;
+}
+
+#main .img2 .head {
+	color: orange;
+}
+
+#main .cost {
+	margin-top: 5%;
+	color: white;
+	text-align: center;
+	font-weight: bold;
+	font-size: 22px;
+	text-decoration: underline;
+}
+
+p {
+	margin-bottom: 18px;
+}
+
+
+
