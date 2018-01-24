@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-	<meta charset="UTF-8">
-	<meta name="author" content="Мария Липлянина" />
-	<meta name="description" content="О нас - East Time">
-	<title>О нас</title>
-	<link rel="stylesheet" href="../css/style.css" />
+  <meta charset="UTF-8">
+  <meta name="author" content="Мария Липлянина" />
+  <meta name="description" content="ФМы на карте - East Time">
+  <title>Карта</title>
+  <link rel="stylesheet" href="../css/style.css" />
 </head>
 <body>
 
@@ -38,24 +38,31 @@
 
 		<div class="call"><a href=""><img alt="" src="../img/call.png" /></a></div>
 	</div>
-	<div class="main galleriamain">
-		<div class="galleria">
-			<img src="../img/tt2.jpg" />
-			<img src="../img/tt5.jpg" />
-			<img src="../img/tt7.jpg" />
-			<img src="../img/tt8.jpg" />
-			<img src="../img/tt9.jpg" />
-			<img src="../img/tt10.jpg" />
-		</div>
-	</div>
-			<div id="footer" class="footer">
+
+
+	<div id="map"></div>
+
+	<script>
+	function myMap() {
+	  var mapCanvas = document.getElementById("map");
+	  var mapOptions = {
+	    center: new google.maps.LatLng(53.9231499, 27.565459), zoom: 17
+	  };
+	  var map = new google.maps.Map(mapCanvas, mapOptions);
+	}
+
+	</script>
+
+	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCEqrGFTU3LC0bMw2iHatgmYzs7Dkq_GiY&callback=myMap"></script>
+
+	<div id="footer" class="footer">
 		
 			<div class="contacts">
 				
 					<div class="left">
 					
 					<div class="contact address"><img src="../img/location.png" />г. Минск, ул. Богдановича, 91-123</div>
-					<div class="map"><a href="map.html"><img src="../img/map.png" />Посмотреть на карте</a></div>
+					<div class="map"><a href=""><img src="../img/map.png" />Посмотреть на карте</a></div>
 				</div>
 							
 					
@@ -64,8 +71,7 @@
 
 			</div>
 		</div>
-</div>
 
-
-</body>
+	</body>
 </html>
+
