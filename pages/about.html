@@ -6,80 +6,88 @@
 	<meta name="description" content="О нас - East Time">
 	<title>О нас</title>
 	<link rel="stylesheet" href="../css/style.css" />
+	<link rel="stylesheet" href="../css/media.css" />
 </head>
 <body>
 
 <div class="site">
 
-	<div id="navigation" class="navigation"> 
+	<nav id="navigation" class="navigation">
+		<input type="checkbox" id="nav-mobile" />
+		<div class="logomob"><a href="../index.html"><img alt="" src="../img/asia.png"></a>
+		</div><div class="nav-mobile">
+			<label for="nav-mobile"><img alt="" src="../img/hamb.png" /></label>
+		</div>
 		<ul>
 			<li><a class="pad" href="../pages/contacts.html">Контакты</a></li>
 			<li><a class="pad" href="../pages/galleria.html">Галерея</a></li>
 			<li><a class="pad" href="../pages/about.html">О нас</a></li>
-			<li><a class="pad" href="../pages/tours.html">Туры</a></li>
+			<li><a class="pad" href="../pages/tours.html">Туры</a>
+				<ul class="submenu">
+					<li><a href="nearesttours.html">Ближайшие</a></li>
+					<li><a href="hottours.html">Горячие</a></li>
+					<li><a href="mounttours.html">В горы</a></li>
+					<li><a href="beachtours.html">Пляжные</a></li>
+				</ul>
+			</li>
 			<li><a class="nopad" href="../index.html"><img alt="" src="../img/asia.png"></a></li>
 		</ul>
-	</div>
+	</nav>
 
-	<div class="header">
+	<header id="header" class="header headerabout">
 		<div class="containerabout">
 
-			<div class="left"></div> 
+			<section class="left"></section> 
 
-			<div class="right">
+			<section class="right">
 				<div class="contacts">
 							
-					<div class="contact"><a href=""><img src="../img/instagram.png"></a></div>
-					<div class="contact"><a href=""><img src="../img/twitter.png"></a></div>
-					<div class="contact"><a href=""><img src="../img/vk.png"></a></div>
+					<div class="contact"><a href=""><img alt="" src="../img/instagram.png"></a></div>
+					<div class="contact"><a href=""><img alt="" src="../img/twitter.png"></a></div>
+					<div class="contact"><a href=""><img alt="" src="../img/vk.png"></a></div>
 				</div>
-			</div>
+			</section>
 
 			<div class="shadow">
 
-				<div class="promoabout"><h1>East Time - это новый вид путешествий, который можно сравнить с поездкой к другу в другой город.</h1>
+				<section class="promoabout">
+					<h1>East Time - это новый вид путешествий, который можно сравнить с поездкой к другу в другой город.</h1>
 					<img src="../img/bigmap.png" />
 					<p>С 2009 года мы неустанно разрабатываем уникальные маршруты туров в Азию из Беларуси, чтобы сделать твой отдых незабываемым! Мы открыли офисы East Time в Минске, Киеве, Праге, Кишиневе и Вроцлаве, свозили более нескольких сотен туров в Азию из разных городов, получили более 2-х тысяч счастливых отзывов и лично протестировали сотни локаций в разных уголках континента, чтобы сделать каждый тур легендарным! Приготовься забыть о расписании, правилах и скучных экскурсиях и ощути вкус настоящей свободы приключений, которые вскружат голову!</p>
-				</div>
+				</section>
 			</div>
-
 			
 			<div class="call"><a href=""><img alt="" src="../img/call.png" /></a></div>
-		</div>
-	</div>
 
-	<div id="main" class="main">
-		<div class="advant aboutus">
+		</div>
+	</header>
+
+	<main id="main" class="main">
+		<section class="advant aboutus">
  			<div class="adv adv1"><img class="tick" alt="птичка" src="../img/tick.png" /><span class="num"> 4 </span>  года успешной работы
  			</div><div class="adv adv2"><img class="tick" alt="птичка" src="../img/tick.png" /><span class="num">100+</span> организованных туров
  			</div><div class="adv adv3"><img class="tick" alt="птичка" src="../img/tick.png" /><span class="num">3000+</span> довольных туристов
  			</div><div class="adv adv4"><img class="tick" alt="птичка" src="../img/tick.png" /><span class="num">100000+</span> километров преодолено</div>
-
- 		</div>
-
-	</div>
+ 		</section>
+	</main>
 
 
-	<div id="footer" class="footer">
+	<footer id="footer" class="footer">
 		
-			<div class="contacts">
+		<section class="contacts">
 				
-					<div class="left">
-					
-					<div class="contact address"><img src="../img/location.png" />г. Минск, ул. Богдановича, 91-123</div>
-					<div class="map"><a href="map.html"><img src="../img/map.png" />Посмотреть на карте</a></div>
-				</div>
-							
-					
-				<div class="contact mail"><img class="mail" alt="" src="../img/mail.png" />aaaa@gmail.com</div>
-				<div class="contact phone"><img class="phone" alt="" src="../img/phone.png" />+375298521004</div>
-
+			<div class="left">
+				<div class="contact address"><img alt="" src="../img/location.png" />г. Минск, ул. Богдановича, 91-123</div>
+				<div class="map"><a href="map.html"><img alt="" src="../img/map.png" />Посмотреть на карте</a></div>
 			</div>
-		</div>
+						
+			<div class="contact mail"><img class="mail" alt="" src="../img/mail.png" />aaaa@gmail.com</div>
+			<div class="contact phone"><img class="phone" alt="" src="../img/phone.png" />+375298521004</div>
 
-	
+		</section>
+	</footer>
+
 </div>
-
 
 </body>
 </html>

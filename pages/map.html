@@ -1,77 +1,88 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-  <meta charset="UTF-8">
-  <meta name="author" content="Мария Липлянина" />
-  <meta name="description" content="ФМы на карте - East Time">
-  <title>Карта</title>
-  <link rel="stylesheet" href="../css/style.css" />
+  	<meta charset="UTF-8">
+  	<meta name="author" content="Мария Липлянина" />
+  	<meta name="description" content="Мы на карте - East Time">
+  	<title>Карта</title>
+  	<link rel="stylesheet" href="../css/style.css" />
+  	<link rel="stylesheet" href="../css/media.css" />
 </head>
 <body>
 
 <div class="site">
 
-	<div id="navigation" class="navigation"> 
+	<nav id="navigation" class="navigation"> 
+		<input type="checkbox" id="nav-mobile" />
+		<div class="logomob"><a href="../index.html"><img alt="" src="../img/asia.png"></a>
+		</div><div class="nav-mobile">
+			<label for="nav-mobile"><img alt="" src="../img/hamb.png" /></label>
+		</div>
 		<ul>
 			<li><a class="pad" href="../pages/contacts.html">Контакты</a></li>
 			<li><a class="pad" href="../pages/galleria.html">Галерея</a></li>
 			<li><a class="pad" href="../pages/about.html">О нас</a></li>
-			<li><a class="pad" href="../pages/tours.html">Туры</a></li>
+			<li><a class="pad" href="../pages/tours.html">Туры</a>
+				<ul class="submenu">
+					<li><a href="nearesttours.html">Ближайшие</a></li>
+					<li><a href="hottours.html">Горячие</a></li>
+					<li><a href="mounttours.html">В горы</a></li>
+					<li><a href="beachtours.html">Пляжные</a></li>
+				</ul></li>
 			<li><a class="nopad" href="../index.html"><img alt="" src="../img/asia.png"></a></li>
 		</ul>
-	</div>
+	</nav>
 
-	<div class="header height">
+	<header id="header" class="header height">
 
-		<div class="left"></div> 
+		<section class="left"></section> 
 
-		<div class="right">
+		<section class="right">
 			<div class="contacts">
 						
-				<div class="contact"><a href=""><img src="../img/instagram.png"></a></div>
-				<div class="contact"><a href=""><img src="../img/twitter.png"></a></div>
-				<div class="contact"><a href=""><img src="../img/vk.png"></a></div>
+				<div class="contact"><a href=""><img alt="" src="../img/instagram.png"></a></div>
+				<div class="contact"><a href=""><img alt="" src="../img/twitter.png"></a></div>
+				<div class="contact"><a href=""><img alt="" src="../img/vk.png"></a></div>
 			</div>
-		</div>
-
-		
+		</section>
 
 		<div class="call"><a href=""><img alt="" src="../img/call.png" /></a></div>
-	</div>
+	</header>
 
 
-	<div id="map"></div>
+	<section id="map"></section>
 
 	<script>
-	function myMap() {
-	  var mapCanvas = document.getElementById("map");
-	  var mapOptions = {
-	    center: new google.maps.LatLng(53.9231499, 27.565459), zoom: 17
-	  };
-	  var map = new google.maps.Map(mapCanvas, mapOptions);
+		function myMap() {
+		  var mapCanvas = document.getElementById("map");
+		  var mapOptions = {
+		    center: new google.maps.LatLng(53.9231499, 27.565459), zoom: 17
+		  };
+		  var map = new google.maps.Map(mapCanvas, mapOptions);
 	}
-
 	</script>
 
 	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCEqrGFTU3LC0bMw2iHatgmYzs7Dkq_GiY&callback=myMap"></script>
 
-	<div id="footer" class="footer">
+	<footer id="footer" class="footer">
 		
-			<div class="contacts">
+		<section class="contacts">
+			
+				<div class="left">
 				
-					<div class="left">
-					
-					<div class="contact address"><img src="../img/location.png" />г. Минск, ул. Богдановича, 91-123</div>
-					<div class="map"><a href=""><img src="../img/map.png" />Посмотреть на карте</a></div>
-				</div>
-							
-					
-				<div class="contact mail"><img class="mail" alt="" src="../img/mail.png" />aaaa@gmail.com</div>
-				<div class="contact phone"><img class="phone" alt="" src="../img/phone.png" />+375298521004</div>
-
+				<div class="contact address"><img alt="" src="../img/location.png" />г. Минск, ул. Богдановича, 91-123</div>
+				<div class="map"><a href="map.html"><img alt="" src="../img/map.png" />Посмотреть на карте</a></div>
 			</div>
-		</div>
+						
+				
+			<div class="contact mail"><img class="mail" alt="" src="../img/mail.png" />aaaa@gmail.com</div>
+			<div class="contact phone"><img class="phone" alt="" src="../img/phone.png" />+375298521004</div>
 
-	</body>
+		</section>
+	</footer>
+
+</div>
+
+</body>
 </html>
 
