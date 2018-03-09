@@ -25,7 +25,6 @@
 	}
 
 	.main .categories .c a{
-
 		font-size: 26px;
 		line-height: 31px;
 	}
@@ -70,7 +69,6 @@
 		height: 45px;
 	}
 	.main .categories .c a{
-
 		font-size: 30px;
 		line-height: 31px;
 
@@ -133,22 +131,9 @@
 		padding-top: 265px;
 	}
 
-	/*О нас */
-
-	.headerabout {
-		height: 110%;
-	}
-
-	
 }
 
 @media (orientation: portrait){
-	.header{
-		height: 70%;
-	}
-	.height{
-		height: 0;
-	} 
 
 	/*Форма брони*/
 
@@ -191,24 +176,22 @@
 	}
 
 }
+
 @media (max-width: 1100px){
-	.main .advant{
-		width: 90%;
-		padding-left: 5%;
-		padding-right: 5%;
-	}
 	.main .advant .adv{
-		width: 49%;
-		margin-left: 1%;
-		font-size: 16px;
+		width: 50%;
+		margin-left: 0%;
+		font-size: 18px;
 	}
 
-	/*Контакты*/
-
-	.main .square h1,
-	.main .square .lower{
-		width: 85%;
+	.header h1{
+		padding-top: 150px;
 	}
+
+	.header p{
+		padding-bottom: 100px;
+	}
+
 }
 
 @media (max-width: 1000px) {
@@ -230,23 +213,14 @@
 	
 	.main .about  p{
 		display: block;
-		width: 95%;
-		margin-left: auto;
-		margin-right: auto;
+		width: 100%;
 	}
 
 	.main .about img{
 		display: none;
 	}
-	.main .categories .c{ 	 
-		width: 50%;
-	}
-	.main .categories .c1 h2{
-		padding-left: 0px;
-	}
-
-	.main .categories .c4 h2{
-		padding-right: 0px;
+	.main .categories .big-container{
+		width: 100%;
 	}
 
 	.main .countries{
@@ -272,11 +246,9 @@
 	/*О нас*/
 
 	.header .promoabout p{
-		width: 95%;
+		width: 92%;
 		margin-left: auto;
 		margin-right: auto;
-		padding-bottom: 3%;
-
 		font-size: 20px;
 		line-height: 26px;
 	}
@@ -308,45 +280,22 @@
 	}
 
 	/*Контакты*/
-
-	.main .square{
-		display: block;
-
+	.main .contacts{
+		padding-bottom: 0px;
+	}
+	.main .contacts .big-container{
 		width: 100%;
-		height: 400px;
-	}
-	.main .sq1{
-		margin-top: 40px;
-	}
-	.main .sq1,
-	.main .sq2{
-		margin-bottom: 0px;
-	}
-	.main .sq2{
-		margin-top: 0px;
 	}
 
-	.main .sq3{
-		margin-left: 0;
-		margin-top: 0px;
-		margin-bottom: 0px;
+	/*Карта*/
+	#map{
+		width: 49.8%;
 	}
 
-	.main .sq2 h1{
-		margin-top: 0px;
-	}
+
 	
 }
 
-@media (orientation: landscape) and (max-width: 1000px){
-
-	/*О нас*/
-	
-	.headerabout{
-		height: 130%;
-	}
-
-}
 
 @media (max-width: 910px){
 
@@ -380,31 +329,13 @@
 	.bookheight .container{
 		padding-top: 0%;
 	}
+
 	.main form {
 		width: 100%;
 		height: 100%;
 		margin-left: 0;
 		margin-right: 0;
 		margin-bottom: 0;
-	}
-
-}
-
-@media (orientation: portrait) and (max-width: 880px){
-
-	/*О нас*/
-
-	.headerabout{
-		height: 150%;
-	}
-	.header .promoabout h1{
-		font-size: 45px;
-		line-height: 55px;
-		padding-top: 15%;
-	}
-	.header .promoabout p{
-		font-size: 30px;
-		line-height: 45px;
 	}
 
 }
@@ -419,6 +350,7 @@
 		font-size: 22px;
 		line-height: 28px;
 	}
+
 	.main .about p{
 		font-size: 20px;
 		line-height: 28px;
@@ -469,8 +401,6 @@
 		background-color: rgba(61,129,255, 0.5);
 	}
 
-	/*О нас*/
-
 	.main .destination .point img{
 		width: 55px;
 		height: 55px;
@@ -485,30 +415,7 @@
 	}
 
 }
-@media (orientation: portrait) and (max-width: 800px){
 
-	.header .promo{
-		width: 100%;
-		margin-left: 0;
-		margin-right: 0;
-		top: 30%;
-	}
-
-
-}
-@media (orientation:landscape) and (max-width: 800px){
-
-	/*О нас*/
-
-	.header .promoabout h1{
-		font-size: 35px;
-		line-height: 45px;
-	}
-	.header .promoabout p{
-		font-size: 20px;
-		line-height: 35px;
-	}
-}
 
 @media (max-width: 768px){
 
@@ -520,17 +427,18 @@
 	.navigation .logomob{
 
 		display: inline-block;
+		vertical-align: top;
+		margin-left: 4%;
 
-		width: 50%;
+		width: 46%;
 		height: 41px;
-
+		padding-bottom: 3px;
 		margin-bottom: -5px;
-		
 	}
 
 	.navigation .nav-mobile label{
 		position: absolute;
-		right: 30px;
+		right: 4%;
 	}
 	.navigation .nav-mobile img{
 		width: 25px;
@@ -538,7 +446,21 @@
 		padding-top: 7px;
 	}
 	.navigation .logomob img{
-		padding-left: 20px;
+		width: 30px;
+		height: 30px;
+	}
+	.navigation .logomob .logotext,
+	.navigation .logomob img{
+		display: inline-block;
+		vertical-align: middle;
+	}
+	.navigation .logomob .logotext{
+		font-size: 17px;
+		line-height: 18px;
+		font-weight: bold;
+		padding-top: 2px;
+		letter-spacing: 0px;
+		color: #fff;
 	}
 
 	.navigation > ul{
@@ -574,6 +496,29 @@
 		background-color: #BB3DFF;
 	}
 
+	.header h1{
+		padding-top: 80px;
+	}
+
+	.header p{
+		padding-bottom: 35px;
+		margin-bottom: 0;
+	}
+
+	/*О нас*/
+
+	.header .promoabout h1{
+		font-size: 25px;
+		line-height: 35px;
+		width: 92%;
+	}
+
+	.header .promoabout p{
+
+		font-size: 16px;
+		line-height: 24px;
+	}
+
 	/*Галерея*/
 
 	.main .galleria .album h1{
@@ -597,10 +542,40 @@
 		height: 0%;
 		padding-bottom: 60%;
 	}
-		/*Контакты*/
-	.main .square h1,
-	.main .square .lower{
+
+
+	/*Контакты*/
+
+	.main .square{
+		display: block;
+
 		width: 100%;
+	}
+
+	.main .square .lower{
+		height: 150px;
+	}
+	
+	.main .square .lower .mph{
+		padding-top: 20px;
+	}
+
+	.main .square .lower .address{
+		padding-top: 50px;
+	}
+
+	.main .square .lower .contact{
+		padding-top: 5%;
+	}
+
+	/*Карта*/
+
+	#map{
+		display: block;
+		margin-left: 0px;
+
+		width: 100%;
+
 	}
 
 }
@@ -612,28 +587,9 @@
 		line-height: 28px;
 	}
 
-	/*О нас*/
-
-	.headerabout{
-		height: 120%;
-	}
-
 }
 
 @media (orientation: landscape) and (max-width: 768px){
-	.header{
-		height: 100%;
-	}
-	.height{
-		height: 0;
-	}
-
-	.header .header_slides{
-		height: 100%;
-	}
-	.header .promo {
-		top: 25%; 
-	}
 
 	/*Туры*/
 	
@@ -642,11 +598,6 @@
 		margin-right: .5%;
 	}
 
-	/*О нас*/
-
-	.headerabout{
-		height: 180%;
-	}
 }
 
 @media (max-width: 710px){
@@ -667,9 +618,6 @@
 
 	/*О нас*/
 
-	.headerabout{
-		height: 150%;
-	}
 	.main .advant .adv{
 		width: 100%;
 	}
@@ -679,22 +627,6 @@
 
 	/*О нас*/
 
-	.headerabout{
-		height: 190%;
-	}
-	.header .promoabout h1{
-		font-size: 33px;
-		line-height: 38px;
-	}
-	.header .promoabout p{
-		font-size: 20px;
-		line-height: 30px;
-	}
-
-	.main .advant .adv{
-		font-size: 18px;
-		line-height: 25px;
-	}
 	.main .advant .tick{
 		width: 35px;
 		height: 30px;
@@ -707,40 +639,6 @@
 
 }
 
-@media (orientation: portrait) and (max-width: 640px) {
-	
-	/*О нас*/
-
-	.headerabout{
-		height: 150%;
-	}
-	.header .promoabout h1{
-		font-size: 32px;
-		line-height: 38px;
-	}
-	.header .promoabout p{
-		font-size: 18px;
-		line-height: 28px;
-	}
-
-	/*Контакты*/
-
-	.main .square .lower{
-		height: 100%;
-	}
-	.main .square{
-		height: auto;
-	}
-
-	.main .square .lower .contact{
-		display: block;
-		width: 100%;
-	}
-	.main .square .lower .vk{
-		margin-bottom: 90px;
-	}
-
-}
 
 @media  (max-width: 640px) {
 
@@ -810,24 +708,13 @@
 		font-size: 20px;
 		line-height: 26px;
 	}
-
-	/*О нас*/
-
-	.headerabout{
-		height: 220%;
-	}
-	.header .promoabout h1{
-		font-size: 30px;
-		line-height: 38px;
-	}
-	.header .promoabout p{
-		font-size: 18px;
-		line-height: 28px;
-	}
 		
 }
 
 @media (max-width: 600px){
+	.main .categories .c a{
+		font-size: 16px;
+	}
 
 	/*Форма брони*/
 
@@ -837,15 +724,7 @@
   	.main form h1{
 		margin-top: 60px;
 	}
-}
 
-@media  (orientation: landscape) and (max-width: 600px) {
-
-	.header .promo {
-		margin-left: 1%;
-		margin-right: 1%;
-		top: 20%; 
-	}
 }
 
 
@@ -859,10 +738,6 @@
 		font-size: 18px;
 		line-height: 22px;
 	}
-	.header .promo {
-		margin-left: 1%;
-		margin-right: 1%;
-	}
 }
 
 
@@ -871,21 +746,15 @@
 	.main .about{
 		display: none;
 	}
-	.main .categories .c{
-	 	display: block;
-	 
-		width: 100%;
-	}
 
-	/*О нас*/
-
-	.header .promoabout h1{
-		font-size: 28px;
-		line-height: 32px;
+	.main .alltours{
+		display: none;
 	}
-	.header .promoabout p{
-		font-size: 16px;
-		line-height: 22px;
+	.main .categories .c a{
+		line-height: 16px;
+		padding-top: 35px;
+		padding-bottom: 35px;
+		padding-left: 8%;
 	}
 
 	/*Туры*/
@@ -961,19 +830,13 @@
 
 @media  (orientation: portrait) and (max-width: 480px){
 	
-	.header .promo{
-		top: 25%;
-	}
 
 	/*О нас*/
 
-	.headerabout{
-		height: 120%;
-	}	
 
 	.main .advant .adv{
-	font-size: 16px;
-	line-height: 20px;
+		font-size: 16px;
+		line-height: 20px;
 
 	}
 	.main .advant .tick{
@@ -986,18 +849,24 @@
 		line-height: 23px; 
 	}
 
-}
+	/*Контакты*/
 
-@media  (orientation: landscape) and (max-width: 480px){
-
-	/*О нас*/
-
-	.headerabout{
-		height: 220%;
+	.main .square .lower{
+		min-height: 150px;
 	}
+
 }
+
 
 @media  (max-width: 380px){
+	.main .categories .c{
+		display: block;
+		width: 100%;
+	}
+	.main .categories .c a{
+		font-size: 18px;
+		line-height: 18px;
+	}
 
 	/*Туры*/
 
@@ -1005,30 +874,10 @@
 		margin-left: 0.8%;
 		margin-right: 0.8%;
 	}
+
+
 }
 
-@media  (orientation: portrait) and (max-width: 370px){
-	
-	.main .alltours h2{
-		font-size: 25px;
-	}
-
-	/*О нас*/
-
-	.headerabout{
-		height: 150%;
-	}
-
-	/*Контакты*/
-
-	.main .square h1{
-		display: none;
-	}
-
-	.main .square{
-		min-height: 300px;
-	}
-}
 
 @media (max-width: 320px){
 
@@ -1037,33 +886,18 @@
 		margin-right: 0.3%;
 	}
 }
+
 @media  (orientation: portrait) and (max-width: 320px){
-	.header .promo{
-		top: 12%;
-	}
+
 	.header h1{
 		font-size: 30px;
 		line-height: 34px;
-	}
-	.main .categories .c a{
-		font-size: 16px;
-		line-height: 18px;
-		padding-bottom: 50px;
-	}
-
-	/*О нас*/
-
-	.headerabout{
-		height: 200%;
 	}
 
 }
 
 @media (orientation: landscape) and (max-width: 320px){
 
-	.header .promo{
-		top: 12%;
-	}
 	.header h1{
 		font-size: 25px;
 		line-height: 30px;
@@ -1079,27 +913,10 @@
 		padding-bottom: 50px;
 	}
 
-	/*О нас*/
-
-	.headerabout{
-		height: 350%;
-	}
-
-	.header .promoabout h1{
-		font-size: 25px;
-		line-height: 30px;
-	}
-	.header .promoabout p{
-		font-size: 16px;
-		line-height: 20px;
-	}
-
 }
 
 @media  (orientation: portrait) and (max-width: 240px){
-	.header .promo{
-		top: 5%;
-	}
+
 	.header h1{
 		font-size: 18px;
 		line-height: 22px;
@@ -1107,12 +924,6 @@
 	.header p{
 		font-size: 14px;
 		line-height: 16px;
-	}
-
-	/*О нас*/
-
-	.headerabout{
-		height: 250%;
 	}
 
 	/*Форма брони*/
