@@ -7,4 +7,4 @@ I'm absolutely fascinated by both of this activities, so why not to combine them
 
 Wish me good luck!
 
-Bye.
+Bye-bye.
