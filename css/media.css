@@ -172,7 +172,15 @@
 	}
 	.main > .top1{
 		position: static;
-		margin-top: 40px;
+		margin-top: 39px;
+	}
+
+}
+
+
+@media (max-width: 1161px){
+	.main  .sq2 .text{
+		padding-top: 0px;
 	}
 
 }
@@ -266,6 +274,11 @@
 		line-height: 25px;
 
 	}
+
+	.main > .aboutus{
+		padding-bottom: 20px;
+		background-color: #fff;
+	}
 	.main .advant .adv .num {
 		font-size: 26px;
 	}
@@ -291,9 +304,6 @@
 	#map{
 		width: 49.8%;
 	}
-
-
-	
 }
 
 
@@ -359,46 +369,26 @@
 }
 
 @media (max-width: 800px){
-	.main .categories .c1 a:hover{
-		background-color: #3d81ff; 
-	}
-
-	.main .categories .c2 a:hover{
-		background-color: #ff3de2; 
-	}
-
-	.main .categories .c3 a:hover{
-		background-color: #ffbb3d; 
-	}
-
-	.main .categories .c4 a:hover{
-		background-color: #81ff3d; 
-	}
-
-	.main .categories .c a:hover{
-		color: #fff;
-	}
-
 	.main .trips .shadow:hover{
 		background-color: rgba(0,0,0,0.0);
 		transition: 0.75s;
 	}
 	.main .trips .trip1 .shadow:hover .desc{
-		background-color: rgba(255,61,226, 0.5);
+		background-color: rgba(255,51,204, 0.5);
 	}
 
 	.main .trips .trip2 .shadow:hover .desc{
-		background-color: rgba(61,129,255, 0.5);
+		background-color: rgba(51,102,255, 0.5);
 	}
 
 	/*Туры*/
 
 	.main .trips .trip1 .shadow:hover .desctour{
-		background-color: rgba(255,61,226, 0.5);
+		background-color: rgba(255,51,204, 0.5);
 	}
 
 	.main .trips .trip2 .shadow:hover .desctour{
-		background-color: rgba(61,129,255, 0.5);
+		background-color: rgba(51,102,255, 0.5);
 	}
 
 	.main .destination .point img{
@@ -505,6 +495,17 @@
 		margin-bottom: 0;
 	}
 
+	.main .categories .c a{
+		padding-left: 8%;
+	}
+	.main .categories .c .this{
+		background-size: 20px 20px;
+		background-position: 92% 50%;
+	}
+	.main .alltours h2{
+		font-size: 25px;
+	}
+
 	/*О нас*/
 
 	.header .promoabout h1{
@@ -552,21 +553,48 @@
 		width: 100%;
 	}
 
-	.main .square .lower{
-		height: 150px;
-	}
-	
-	.main .square .lower .mph{
-		padding-top: 20px;
-	}
-
 	.main .square .lower .address{
-		padding-top: 50px;
+		padding-top: 35px;
+		padding-bottom: 35px;
 	}
 
-	.main .square .lower .contact{
-		padding-top: 5%;
+	.main  .sq2 .text{
+		padding-top: 15px;
 	}
+	.main  .square .text{
+		width: calc(100% - 60px - 4%);
+		margin-left: -6px;
+		background-color: #ddd;
+	}
+	.main .sq3 .allcon .img{
+		margin-right: calc((100% - 300px)/8);
+	}
+	.main .square .lower .mph{
+		padding-top: 35px;
+	}
+	.main .square .lower .mph,
+	.main .square .lower .address{
+		margin-left: 4%;
+		margin-top: 0;
+		padding-bottom: 15px;
+	}
+	.main .square .lower .address{
+		padding-top: 0;
+	}
+	.main .square .lower .allcon{
+		padding-bottom: 35px;
+		margin-top: 0;
+		margin-left: 4%;
+	}
+
+	.main .sq3 .allcon{
+		width: calc(92% + 6px);
+	}
+	.main .square .lower{
+		height: auto;
+		background-color: #eee;
+	}
+
 
 	/*Карта*/
 
@@ -715,6 +743,32 @@
 	.main .categories .c a{
 		font-size: 16px;
 	}
+	.main .categories .c a{
+		line-height: 16px;
+		padding-top: 35px;
+		padding-bottom: 35px;
+		background-size: 20px 20px;
+		background-position: 92% 50%;
+
+	}
+	.main .alltours {
+		padding-top: 20px;
+		padding-bottom: 20px;
+		margin-bottom: 0;
+		vertical-align: middle;
+	}
+	.main .alltours h2{
+		font-weight: bold;
+		font-size: 20px;
+		margin: 0;
+	}
+	.main .alltours button a{
+		padding: 8px 50px 8px 30px;
+		background-size: 20px 20px;
+		background-position: 96% 51%;
+
+		font: bold 18px/25px "Roboto-Regular", Arial;
+	}
 
 	/*Форма брони*/
 
@@ -740,6 +794,13 @@
 	}
 }
 
+@media (max-width: 500px){
+	.main .square .lower{
+		font-size: 16px;
+
+	}
+}
+
 
 @media  (max-width: 480px){
 
@@ -750,12 +811,7 @@
 	.main .alltours{
 		display: none;
 	}
-	.main .categories .c a{
-		line-height: 16px;
-		padding-top: 35px;
-		padding-bottom: 35px;
-		padding-left: 8%;
-	}
+
 
 	/*Туры*/
 
@@ -796,16 +852,38 @@
 	.main .square h1{
 		font-size: 24px;
 	}
-	.main .square .lower{
-		font-size: 18px;
-
-	}
 	.main .square .lower img{
 		padding-right: 5px;
 	}
 	.main .square .lower .contact img{
 		width: 40px;
 		height: 40px;
+	}
+	.main .sq3 .allcon .img{
+		margin-right: calc((100% - 192px)/4);
+	}
+	.main  .square .img{
+		width: 40px;
+		height: 40px;
+		background-size: 25px 25px;
+	}
+
+	.main .sq3 .allcon{
+		width: 92%;
+		margin-left: 4%;
+	}
+	.main  .square .text{
+		width: calc(100% - 40px - 4%);
+		margin-left: -4px;
+		line-height: 40px;
+	}
+	.main .sq3 .allcon .c5{
+		margin-right: 0px;
+	}
+	.main  .sq2 .text{
+		line-height: 40px;
+		padding-top: 0px;
+		height: auto;
 	}
 
 	/*Форма брони*/
@@ -849,12 +927,6 @@
 		line-height: 23px; 
 	}
 
-	/*Контакты*/
-
-	.main .square .lower{
-		min-height: 150px;
-	}
-
 }
 
 
@@ -866,6 +938,9 @@
 	.main .categories .c a{
 		font-size: 18px;
 		line-height: 18px;
+		line-height: 16px;
+		padding-top: 30px;
+		padding-bottom: 30px;
 	}
 
 	/*Туры*/
@@ -876,6 +951,12 @@
 	}
 
 
+}
+
+@media (max-width: 350px){
+	.main  .sq2 .text{
+		line-height: 20px;
+	}
 }
 
 
