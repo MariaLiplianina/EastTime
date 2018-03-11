@@ -45,7 +45,6 @@ h4, h5, h6, p{
 	margin-left: auto;
 	margin-right: auto;
 }
-
 .mobile-container{
 	width: 92%;
 	margin-left: auto;
@@ -106,14 +105,19 @@ h4, h5, h6, p{
 	letter-spacing: 2px;
 }
 
+.navigation .this{
+	background-color: #fff;
+	color: #33ccff;
+}
+
 .navigation ul li .pad{
-	padding-top: 12px;
-	padding-bottom: 11px;
+	padding-top: 18px;
+	padding-bottom: 17px;
 }
 
 .navigation ul li .nopad{
-	padding-bottom: 2px;
-	padding-top: 2px;
+	padding-bottom: 5px;
+	padding-top: 5px;
 }
 .navigation .logotext,
 .navigation img{
@@ -121,8 +125,8 @@ h4, h5, h6, p{
 	vertical-align: middle;
 }
 .navigation .logotext{
-	font-size: 17px;
-	line-height: 18px;
+	font-size: 18px;
+	line-height: 20px;
 	font-weight: bold;
 	padding-top: 2px;
 	letter-spacing: 0px;
@@ -140,15 +144,15 @@ h4, h5, h6, p{
 }
 
 .navigation ul li img{
-	width: 30px;
-	height: 30px;
+	width: 32px;
+	height: 32px;
 }
 
 .navigation .submenu{
 	position: absolute;
 	background-color: #33ccFF;
 	opacity: 0;
-	top: 42px;
+	top: 54px;
 	z-index: 3;
 	transition: 0.75s;
 }
@@ -213,6 +217,7 @@ h4, h5, h6, p{
 
 .header .right .contact img{
 	width: 25px;
+	cursor: pointer;
 }
 
 
@@ -269,8 +274,8 @@ h4, h5, h6, p{
 
 .header .promo {
 	position: relative;
-	margin-left: 5%;
-	margin-right: 5%;
+	margin-left: auto;
+	margin-right: auto;
 	top: 35%; 
 
 	text-align: center;
@@ -279,7 +284,7 @@ h4, h5, h6, p{
 }
 
 .header h1{
-	padding-top: 250px;
+	padding-top: 200px;
 	font-size: 55px;
 	line-height: 57px;
 	letter-spacing: 3px;
@@ -288,7 +293,39 @@ h4, h5, h6, p{
 .header p{
 	font-size: 26px;
 	line-height: 35px;
-	padding-bottom: 220px;
+}
+.header .arrowdown{
+	height: 40px;
+	background-image: url('../img/arrowdown.png');
+	background-size: 40px 40px;
+	background-repeat: no-repeat;
+	background-position: center top;
+
+	padding-bottom: 40px;
+}
+.header button{
+	width: 100%;
+	background-color: transparent;
+	border: none;
+	margin-bottom: 120px;
+}
+
+.header button a{
+	padding: 20px 30px;
+
+	font: bold 18px/22px "Roboto-Regular", arial;
+	text-decoration: none;
+	text-transform: uppercase;
+
+	color: #fff;
+	background-color: #ff6633;
+
+	transition: 0.5s;
+}
+
+.header button a:hover{
+	background-color: #33ccff;
+	transition: 0.5s;
 }
 
 
@@ -327,9 +364,9 @@ h4, h5, h6, p{
 .main .categories .c a{
 	display: block;
 
-	padding-top: 50px;
-	padding-bottom: 40px;
-	padding-left: 10%;
+	padding-top: 40px;
+	padding-bottom: 30px;
+	padding-left: 8%;
 
 	font-size: 23px;
 	line-height: 25px;
@@ -344,7 +381,7 @@ h4, h5, h6, p{
 	background-image: url('../img/arrowright.png');
 	background-repeat: no-repeat;
 	background-size: 25px 25px;
-	background-position: 92% 53%;
+	background-position: 96% 53%;
 
 }
 
@@ -394,8 +431,6 @@ h4, h5, h6, p{
 	padding-top: 40px;
 	padding-bottom: 20px;
 
-	text-align: center;
-
 	color: #fff;
 
 	background-color: #ddd; 
@@ -404,12 +439,15 @@ h4, h5, h6, p{
 .main .alltours button{
 	display: inline-block;
 	width: 50%;
-	margin-left: -5px;
+	box-sizing: border-box;
 }
 
 .main .alltours button{
 	background-color: transparent;
 	border: none;
+	margin-left: -5px;
+	text-align: right;
+	padding-right: 4%;
 }
 
 .main .alltours button a{
@@ -439,6 +477,7 @@ h4, h5, h6, p{
 .main .alltours h2{
 	font-weight: bold;
 	font-size: 35px;
+	padding-left: 4%;
 }
 
 .main .countries{
@@ -500,14 +539,14 @@ h4, h5, h6, p{
 .main .trips .trip1 .desc,
 .main .trips .trip1 .desctour{
 	float: right;
-	margin-right: 60px;
+	margin-right: calc(4% + 40px);
 	background-color: rgba(255,51,204, 0.7);
 }
 
 .main .trips .trip2 .desc,
 .main .trips .trip2 .desctour{
 	float: left;
-	margin-left: 60px;
+	margin-left: calc(4% + 40px);
 	background-color: rgba(51, 102, 255, 0.7);
 
 }
@@ -544,8 +583,6 @@ h4, h5, h6, p{
 	background-image: url('../img/tour.jpg');
 }
 .main .advant {
-	padding-left: 5%;
-	padding-right: 5%;
 	padding-bottom: 50px;
 	
 	text-align: center;
@@ -557,12 +594,12 @@ h4, h5, h6, p{
 }
 
 .main .advant .adv{
-	width: 45%;
+	width: 50%;
 	height: 50px;
+	margin-left: 0%;
 
 	margin-top: 10px;
 	margin-bottom: 30px;
-	margin-left: 5%;
 
 	display: inline-block;
 
@@ -594,10 +631,8 @@ h4, h5, h6, p{
 }
 
 .main .about {
-	padding-top: 40px;
 	padding-bottom: 40px;
 
-	text-align: center;
 	vertical-align: top;
 
 	background: #fff;
@@ -606,7 +641,8 @@ h4, h5, h6, p{
 .main .about h2{
 	color: #999;
 	font-size: 35px;
-	margin-bottom: 30px;
+	margin-bottom: 0px;
+	padding-bottom: 35px;
 
 	text-transform: uppercase;
 }
@@ -619,11 +655,11 @@ h4, h5, h6, p{
 .main .about img{
 	width: 300px;
 	vertical-align: top;
-	padding-right: 20px;
+	padding-left: 20px;
 }
 
 .main .about p{
-	width: 60%;
+	width: calc(100% - 325px);
 
 	font-size: 25px;
 	line-height: 30px;
@@ -683,6 +719,9 @@ h4, h5, h6, p{
 	background-size: cover;
 	background-repeat: no-repeat;
 } 
+.header .containertours p{
+	padding-bottom: 180px;
+}
 
 .header .containertours{
 	background-image: url('../img/tour.jpg')
@@ -690,36 +729,65 @@ h4, h5, h6, p{
 
 .main .destination{
 	width: 100%;
-	min-height: 155px;
+	min-height: 140px;
 	padding-bottom: 20px;
-	text-align: center;
+	padding-top: 5px;
 	background-color: #ddd;
 	z-index: 2;
+
+	position: relative;
 }
-.main .destination .container{
-	margin-left: 40px;
-	margin-right: 40px;
+
+.main .destination .arrow{
+	position: absolute;
+	top: 55px;
+
+	display: block;
+
+	width: 18px;
+	height: 30px;
+	background-repeat: no-repeat;
+	background-size: 18px 30px; 
+
+}
+
+
+.main #destination{
+	width: calc(90% - 30px);
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.main .destination .arrowleft{
+	left: calc(40px + 4%);
+	background-image: url('../img/arrowleftbig.png');
+
+}
+
+.main .destination .arrowright{
+	right: calc(40px + 4%);
+	background-image: url('../img/arrowrightbig.png');
 }
 
 .main .destination .env{
 	display: inline-block;
 	text-align: center;
-	margin-left: 0.7%;
-	margin-right: 0.7%;
+	margin-left: calc((100% - 1035px)/16);
+	margin-right: calc((100% - 1035px)/16);
 }
 
-.main .destination .env .thisblue{
+.main .destination .env1{
+	margin-left: 0;
+}
+
+.main .destination .env9{
+	margin-right: 0;
+}
+
+.main .destination .env .this{
 	box-shadow: inset 8px 8px 0px 3px #33ccff;
 }
-.main .destination .env .thisorange{
-	box-shadow: inset 8px 8px 0px 3px #33ccff;
-}
-.main .destination .env .thispink{
-	box-shadow: inset 8px 8px 0px 3px #33ccff;
-}
-.main .destination .env .thislime{
-	box-shadow: inset 8px 8px 0px 3px #33ccff;
-}
+
 .main .destination .env a{
 	display: block;
 
@@ -809,7 +877,9 @@ h4, h5, h6, p{
 }
 
 .main .trips p{
-	width: 90%;
+	width: 92%;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 .main .trips .hot,
@@ -936,12 +1006,13 @@ h4, h5, h6, p{
 
 .main > .top1{
 	position: fixed;
-	top: 40px;
+	top: 54px;
 	z-index: 2;
 }
 
 .main > .top2{
-	padding-top: 165px;
+	margin-top: 155px;
+	z-index: 1;
 }
 
 .main .categories .c .this{
@@ -978,7 +1049,7 @@ h4, h5, h6, p{
 }
 
 .main > .topc{
-	padding-top: 39px;
+	padding-top: 54px;
 }
 
 .main .sticky{
@@ -1128,6 +1199,18 @@ h4, h5, h6, p{
 	background-attachment: fixed;
 }
 
+.main .contacts h2{
+	padding-top: 10px;
+	padding-bottom: 35px;
+	margin: 0;
+
+	font-size: 35px;
+	line-height: 37px;
+
+	text-transform: uppercase;
+	color: #999;
+}
+
 .main .square{
 	display: inline-block;
 	vertical-align: top;
@@ -1141,6 +1224,12 @@ h4, h5, h6, p{
 
 	font-size: 22px;
 	color: #fff;
+}
+
+.main .square .lower .mobile-container{
+	width: 84%;
+	margin-left: auto;
+	margin-right: auto;
 }
 .main .sq1 .lower{
 	background-color: #eee;
@@ -1190,7 +1279,7 @@ h4, h5, h6, p{
 .main  .square .text{
 	line-height: 60px;
 	box-sizing: border-box;
-	width: 76%;
+	width: calc(100% - 60px);
 	padding-left: 20px;
 	padding-right: 20px;
 	margin-left: -6px;
@@ -1223,7 +1312,7 @@ h4, h5, h6, p{
 .main .sq3 .allcon{
 	display: inline-block;
 	margin-top: 120px;
-	width: calc(76% + 40px);
+	width: 100%;
 	margin-left: 0px;
 }
 
@@ -1257,11 +1346,7 @@ h4, h5, h6, p{
 .main .square .lower .mail{
 	margin-bottom: 15px;
 }
-.main .square .lower .mph,
-.main .square .lower .address,
-.main .square .lower .allcon{
-	margin-left: 5%;
-}
+
 
 
 .main .square .lower .mph{
@@ -1310,22 +1395,20 @@ h4, h5, h6, p{
 
 /* Форма */
 .bookheight{
-	background-image: url('../img/tt11.jpg');
+	height: auto;
+	background-image: url('../img/t1.jpg');
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-attachment: fixed;
 }
 
-.bookheight .container{
-	padding-top: 10%;
-	height: 100%;
-}
 .main form {
 	width: 50%;
 	margin-left: auto;
 	margin-right: auto;
 
-  	padding: 60px 100px;  
+  	padding: 60px 100px;
+  	margin-top: 10%;  
     margin-bottom: 10%;
 
     background-color: #efefef;
@@ -1338,35 +1421,35 @@ h4, h5, h6, p{
 	line-height: 32px;
 	text-align: center;
 
-	margin-bottom: 60px;
+	margin-bottom: 50px;
 }
-.main input, textarea{
+
+.main input{
+	width: 100%;
+	height: 40px;
+	box-sizing: border-box;
 	border: none;
 	border-radius: 20px;
-    padding: 12px 20px;
-    border: 1px solid #ff33cc;
+    
 }
 .main input[type=text]{
-		width: 90%;
-    color: #555;
+    color: #000;
     background-color: #fff;
+    padding-left: 15px;
 
     cursor: pointer;
+    border: 1px solid #33ccff;
 }
 
 .main input[type=submit]{
 	margin-top: 5%;
 
-    width: 100%;
-	
-    font-size: 14px;
-    line-height: 16px;
-    font-weight: bold;
+    font: bold 14px/16px "Roboto-Regular", arial;
     letter-spacing: 1px;
     text-transform: uppercase;
     cursor: pointer;
 
-    background-color: #ff33cc;
+    background-color: #ff6633;
     color: #fff;
 
     transition: 0.5s;
@@ -1374,19 +1457,11 @@ h4, h5, h6, p{
 
 .main input[type=submit]:hover {
     background-color: #fff;
-    color: #ff3de2;
-    border: 1px solid #ff33cc;
+    color: #ff6633;
+    border: 1px solid #ff6633;
     transition: 0.5s;
 }
 
-.main textarea{
-	font-family: verdana;
-	text-transform: lowercase;
-	font-size: 12px;
-    line-height: 16px;
-    width: 90%;
-    height: 70px;
-}
 
 
 

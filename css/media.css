@@ -1,14 +1,3 @@
-@media (min-width: 1281px){
-	.header h1{
-		font-size: 70px;
-		line-height: 70px;
-	}
-	.header p{
-		font-size: 35px;
-		line-height: 45px;
-	}
-
-}
 
 @media (min-width: 1366px){
 	.header h1{
@@ -29,12 +18,6 @@
 		line-height: 31px;
 	}
 
-	/*Туры*/
-
-	.main .destination .env{
-		margin-left: .8%;
-		margin-right: .8%;
-	}
 
 	/*О нас */
 
@@ -76,17 +59,11 @@
 
 	/*Туры*/
 
-	.main .destination .env{
-		margin-left: 1.5%;
-		margin-right: 1.5%;
-	}
 	.main .destination .env a{
 		font-size: 22px;
 		line-height: 24px;
 	}
-	.main .destination a .point{
-		padding: 30px;
-	}
+
 		
 	/*О нас */
 
@@ -105,7 +82,46 @@
 	}
 
 }
+@media (max-width: 1366px){
+	.header h1{
+		font-size: 70px;
+		line-height: 70px;
+	}
+	.header p{
+		font-size: 35px;
+		line-height: 45px;
+	}
+	.main .destination a .point{
+		padding: 25px;
+	}
 
+	.main .destination .point img{
+		width: 60px;
+		height: 60px;
+	}
+	.main .destination .env{
+		margin-left: calc((100% - 770px)/12);
+		margin-right: calc((100% - 770px)/12);
+	}
+	.main .destination .env2,
+	.main .destination .env3{
+		display: none;
+	}
+
+	.main .destination .env1{
+		margin-left: 0;
+	}
+
+	.main .destination .env9{
+		margin-right: 0;
+	}
+
+	.main > .top2{
+		padding-top: 0px;
+		margin-top: 149px;
+	}
+
+}
 @media (max-width: 1280px) {
 
 	.main .advant .adv .num {
@@ -115,49 +131,25 @@
 		width: 50%;
 	}
 
+	.main .categories .c a{
+		padding-left: 8%;
+		background-position: 92% 53%;
+	}
+
 	.footer .contacts > .phone,
 	.footer .contacts > .mail,
 	.footer .left{
 		padding-left: 5%;
 	}
-
-	/*Туры*/
-
-	.main .destination .env{
-		margin-left: 0.3%;
-		margin-right: 0.3%;
-	}
 	.main > .top2{
-		padding-top: 265px;
+		padding-top: 0px;
+		margin-top: 230px;
 	}
 
-}
-
-@media (orientation: portrait){
-
-	/*Форма брони*/
-
-	.main form{
-		height: 100%;
+	.main .categories .c .this{
+		background-position: 96% 53%;
 	}
-	.main input, textarea{
-	margin-top: 5%;
-	}
-	.main input{
-	    padding-top: 30px;
-	    padding-bottom: 30px;
-	    border-radius: 40px;
-	    font-size: 20px;
-	    line-height: 25px;
-	}
-	.main input[type=submit]{
-	    font-size: 22px;
-	    line-height: 24px;
-	}
-	.main textarea{
-		font-size: 20px;
-	line-height: 25px;
-	}
+		
 }
 
 @media (max-width: 1250px){
@@ -165,25 +157,62 @@
 	/*Туры*/
 
 	.main .sticky{
-		position: static;
+		position: relative;
+		top: 0;
 	}
 	.main > .top2{
 		padding-top: 0px;
+		margin-top: 54px;
 	}
+
 	.main > .top1{
-		position: static;
-		margin-top: 39px;
+		position: relative;
+		margin-top: 0px;
 	}
 
 }
 
 
-@media (max-width: 1161px){
+@media (max-width: 1180px){
+	
+	.main .destination a .point{
+		padding: 20px;
+	}
+
+	.main .destination .env5,
+	.main .destination .env2,
+	.main .destination .env3,
+	.main .destination .env4{
+		display: none;
+	}
+
+	.main .destination .point img{
+		width: 60px;
+		height: 60px;
+	}
+
+	.main .destination .env{
+		margin-left: calc((100% - 505px)/8);
+		margin-right: calc((100% - 505px)/8);
+	}
+
+	.main .destination .env1{
+		margin-left: 0;
+	}
+
+	.main .destination .env9{
+		margin-right: 0;
+	}
+}
+
+@media (max-width: 1156px){
 	.main  .sq2 .text{
 		padding-top: 0px;
 	}
 
 }
+
+
 
 @media (max-width: 1100px){
 	.main .advant .adv{
@@ -196,13 +225,16 @@
 		padding-top: 150px;
 	}
 
-	.header p{
-		padding-bottom: 100px;
-	}
-
 }
 
+
 @media (max-width: 1000px) {
+	.big-container{
+		width: 100%;
+	}
+	.mobile-container{
+		width: 92%;
+	}
 
 	.navigation ul li:hover > .submenu{
 		display: none;
@@ -211,17 +243,45 @@
 	.header .right{
 		display: none;
 	}
-	.header .call a{
-		display: none;
-	
+	.main .alltours h2{
+		padding-left: 4%;
 	}
+	.main .alltours button{
+		padding-right: 4%;
+	}
+	.main .trips .trip1 .desc,
+	.main .trips .trip1 .desctour{
+		margin-right: 4%
+	}
+
+	.main .trips .trip2 .desc,
+	.main .trips .trip2 .desctour{
+		margin-left: 4%;
+
+	}
+	.main .categories .c a{
+		padding-left: 8%;
+		background-position: 92% 53%;
+
+	}
+	
 	.main .advindex{
 		display: none;
 	}
-	
+	.main .about h2{
+		font-size: 30px;
+		padding-bottom: 35px;
+		padding-top: 35px;
+
+		text-transform: uppercase;
+	}
+	.main .about{
+		padding-bottom: 35px;
+	}
 	.main .about  p{
 		display: block;
 		width: 100%;
+		margin: 0;
 	}
 
 	.main .about img{
@@ -245,11 +305,17 @@
 		margin-left: 0px;
 		margin-right: 0px;
 	}
-
-	.main .destination .env{
-		margin-left: 2%;
-		margin-right: 2%;
+	.main .destination .arrowleft{
+		left: 4%;
 	}
+
+	.main .destination .arrowright{
+		right: 4%;
+	}
+	.main .categories .c .this{
+		background-position: 92% 53%;
+	}
+
 
 	/*О нас*/
 
@@ -299,10 +365,16 @@
 	.main .contacts .big-container{
 		width: 100%;
 	}
+	.main .contacts h2{
+		font-size: 30px;
+		line-height: 32px;
+	}
+
 
 	/*Карта*/
 	#map{
-		width: 49.8%;
+		width: 50%;
+		height: 200px;
 	}
 }
 
@@ -319,14 +391,19 @@
 		font-size: 18px;
 		line-height: 20px;
 	}
-	.main .destination .env{
-		margin-left: 1%;
-		margin-right: 1%;
-	}
 
 }
 
 @media (max-width: 880px){
+	.header .arrowdown{
+		height: 30px;
+		background-size: 30px 30px;
+		padding-bottom: 30px;
+	}
+
+	.main .destination{
+		padding-bottom: 10px;
+	}
 
 	/*О нас*/
 
@@ -335,10 +412,6 @@
 	}
 
 	/*Форма брони*/
-	
-	.bookheight .container{
-		padding-top: 0%;
-	}
 
 	.main form {
 		width: 100%;
@@ -346,7 +419,12 @@
 		margin-left: 0;
 		margin-right: 0;
 		margin-bottom: 0;
+		margin-top: 0;
 	}
+	.main form h1{
+		margin-top: 5%;
+	}
+
 
 }
 
@@ -391,19 +469,6 @@
 		background-color: rgba(51,102,255, 0.5);
 	}
 
-	.main .destination .point img{
-		width: 55px;
-		height: 55px;
-	}
-	.main .destination .env a{
-		font-size: 17px;
-		line-height: 19px;
-	}
-	.main .destination .env{
-		margin-left: 0.8%;
-		margin-right: 0.8%;
-	}
-
 }
 
 
@@ -421,9 +486,8 @@
 		margin-left: 4%;
 
 		width: 46%;
-		height: 41px;
-		padding-bottom: 3px;
-		margin-bottom: -5px;
+		padding-top: 8px;
+		padding-bottom: 8px;
 	}
 
 	.navigation .nav-mobile label{
@@ -470,8 +534,8 @@
 
 	.navigation > ul li .pad{
 
-		padding-top: 20px;
-		padding-bottom: 20px;
+		padding-top: 15px;
+		padding-bottom: 15px;
 	}
 
 	.navigation ul li .nopad{
@@ -481,29 +545,33 @@
 		clear: both;
 		display: block;
 	}
-
-	.navigation a:hover {
-		background-color: #BB3DFF;
+	.navigation ul li > a{
+		padding-right: 4%;
 	}
 
-	.header h1{
-		padding-top: 80px;
-	}
 
-	.header p{
+	.header .containertours p{
 		padding-bottom: 35px;
 		margin-bottom: 0;
 	}
 
-	.main .categories .c a{
-		padding-left: 8%;
-	}
 	.main .categories .c .this{
-		background-size: 20px 20px;
-		background-position: 92% 50%;
+		background-size: 25px 25px;
+		background-position: 92% 53%;
+	}
+	.main > .top1{
+		position: static;
+		margin-top: 54px;
 	}
 	.main .alltours h2{
 		font-size: 25px;
+	}
+	.main > .top2{
+		padding-top: 0px;
+		margin-top: 0px;
+	}
+	.main > .topc{
+		padding-top: 54px;
 	}
 
 	/*О нас*/
@@ -562,7 +630,6 @@
 		padding-top: 15px;
 	}
 	.main  .square .text{
-		width: calc(100% - 60px - 4%);
 		margin-left: -6px;
 		background-color: #ddd;
 	}
@@ -574,7 +641,6 @@
 	}
 	.main .square .lower .mph,
 	.main .square .lower .address{
-		margin-left: 4%;
 		margin-top: 0;
 		padding-bottom: 15px;
 	}
@@ -584,7 +650,6 @@
 	.main .square .lower .allcon{
 		padding-bottom: 35px;
 		margin-top: 0;
-		margin-left: 4%;
 	}
 
 	.main .sq3 .allcon{
@@ -593,6 +658,11 @@
 	.main .square .lower{
 		height: auto;
 		background-color: #eee;
+	}
+	.main .square .lower .mobile-container{
+		width: 92%;
+		margin-left: auto;
+		margin-right: auto;
 	}
 
 
@@ -611,19 +681,8 @@
 @media (orientation: portrait) and (max-width: 768px) {
 
 	.navigation ul li > a{
-		font-size: 24px;
-		line-height: 28px;
-	}
-
-}
-
-@media (orientation: landscape) and (max-width: 768px){
-
-	/*Туры*/
-	
-	.main .destination .env{
-		margin-left: .5%;
-		margin-right: .5%;
+		font-size: 20px;
+		line-height: 24px;
 	}
 
 }
@@ -633,12 +692,23 @@
 	/*Туры*/
 
 	.main .destination .point img{
-		width: 50px;
-		height: 50px;
+		width: 60px;
+		height: 60px;
 	}
-	.main .destination .env a{
-		font-size: 16px;
-		line-height: 18px;
+
+	.main .destination .env6{
+		display: none;
+	}
+	.main .destination .env{
+		margin-left: calc((100% - 400px)/6);
+		margin-right: calc((100% - 400px)/6);
+	}
+
+	.main .destination .env1{
+		margin-left: 0;
+	}
+	.main .destination .env9{
+		margin-right: 0;
 	}
 }
 
@@ -669,6 +739,25 @@
 
 
 @media  (max-width: 640px) {
+	.header h1{
+		padding-top: 100px;
+	}
+
+	.header p{
+		padding-bottom: 20px;
+		margin: 0;
+
+	}
+
+	.header button a{
+		padding: 10px 20px;
+
+		font-size: 14px;
+		line-height: 18px;
+	}
+	.header button{
+		margin-bottom: 55px;
+	}
 
 	.main .about p{
 		font-size: 20px;
@@ -676,23 +765,7 @@
 	}
 
 	/*Туры*/
-
-	.main .destination .point img{
-		width: 45px;
-		height: 45px;
-	}
-	.main .destination .env a{
-		font-size: 15px;
-		line-height: 17px;
-	}
-	.main .destination .env{
-		margin-left: 0.5%;
-		margin-right: 0.5%;
-	}
-
-	.main .destination a .point{
-		padding: 20px;
-	}
+	
 	.main .trips .trip{
 		height: 380px;
 	}
@@ -739,17 +812,33 @@
 		
 }
 
+@media (orientation: portrait) and (max-width: 630px){
+
+	.header h1{
+		font-size: 32px;
+		line-height: 36px;
+	}
+	.header p{
+		font-size: 18px;
+		line-height: 22px;
+	}
+}
+
 @media (max-width: 600px){
 	.main .categories .c a{
 		font-size: 16px;
 	}
 	.main .categories .c a{
 		line-height: 16px;
-		padding-top: 35px;
-		padding-bottom: 35px;
+		padding-top: 25px;
+		padding-bottom: 25px;
 		background-size: 20px 20px;
 		background-position: 92% 50%;
 
+	}
+	.main .categories .c .this{
+		background-size: 20px 20px;
+		background-position: 92% 50%;
 	}
 	.main .alltours {
 		padding-top: 20px;
@@ -770,31 +859,61 @@
 		font: bold 18px/25px "Roboto-Regular", Arial;
 	}
 
+	/*Туры*/
+	.main .destination .env{
+		margin-left: calc((100% - 365px)/6);
+		margin-right: calc((100% - 365px)/6);
+	}
+	.main .destination .point img{
+		display: block;
+
+		width: 50px;
+		height: 50px;
+	}
+
+
+	.main .destination .env1{
+		margin-left: 0;
+	}
+	.main .destination .env9{
+		margin-right: 0;
+	}
+
 	/*Форма брони*/
 
 	.main form {
-  		padding: 20px 30px;
-  	}
+  		padding-right: 4%;
+  		padding-left: 4%;
+  		padding-bottom: 35px;
+	}
+
   	.main form h1{
-		margin-top: 60px;
+		margin-top: 40px;
 	}
 
 }
 
 
-@media (orientation: portrait) and (max-width: 530px){
-
-	.header h1{
-		font-size: 32px;
-		line-height: 36px;
-	}
-	.header p{
-		font-size: 18px;
-		line-height: 22px;
-	}
-}
 
 @media (max-width: 500px){
+
+	/*Туры*/
+
+	.main .destination .env7{
+		display: none;
+	}
+
+	.main .destination .env{
+		margin-left: calc((100% - 275px)/4);
+		margin-right: calc((100% - 275px)/4);
+	}
+
+	.main .destination .env1{
+		margin-left: 0;
+	}
+	.main .destination .env9{
+		margin-right: 0;
+	}
 	.main .square .lower{
 		font-size: 16px;
 
@@ -803,6 +922,36 @@
 
 
 @media  (max-width: 480px){
+	.header h1{
+		padding-top: 100px;
+	}
+	.header p{
+		padding-bottom: 20px;
+		margin: 0;
+
+	}
+	.header button a{
+		display: block;
+		width: 100%;
+		padding-right: 0;
+		padding-left: 0;
+
+		font-size: 14px;
+		line-height: 18px;
+	}
+	.header button{
+		margin-bottom: 55px;
+	}
+	.main .trips .button a{
+		display: block;
+		width: 92%;
+		margin-left: auto;
+		margin-right: auto;
+		box-sizing: border-box;
+
+		padding-left: 0;
+		padding-right: 0;
+	}
 
 	.main .about{
 		display: none;
@@ -815,13 +964,8 @@
 
 	/*Туры*/
 
-	.main .destination .env{
-		margin-left: 3%;
-		margin-right: 3%;
-	}
-
 	.main .trips h3{
-		width: 90%;
+		width: 92%;
 		margin-left: auto;
 		margin-right: auto;
 		font-size: 26px;
@@ -830,12 +974,6 @@
 
 	.main  .trips .date{
 		font-size: 12px;
-	}
-
-	.main .trips p{
-		margin-left: auto;
-		margin-right: auto;
-		width: 95%;
 	}
 
 	.main .trips .price{
@@ -847,18 +985,13 @@
 		font-size: 25px;
 	}
 
+
 	/*Контакты*/
 
-	.main .square h1{
-		font-size: 24px;
+	.main .contacts h2{
+		display: none;
 	}
-	.main .square .lower img{
-		padding-right: 5px;
-	}
-	.main .square .lower .contact img{
-		width: 40px;
-		height: 40px;
-	}
+
 	.main .sq3 .allcon .img{
 		margin-right: calc((100% - 192px)/4);
 	}
@@ -870,10 +1003,9 @@
 
 	.main .sq3 .allcon{
 		width: 92%;
-		margin-left: 4%;
 	}
 	.main  .square .text{
-		width: calc(100% - 40px - 4%);
+		width: calc(100% - 40px);
 		margin-left: -4px;
 		line-height: 40px;
 	}
@@ -889,8 +1021,6 @@
 	/*Форма брони*/
 
 	.main input{
-	    padding-top: 15px;
-	    padding-bottom: 15px;
 	    border-radius: 25px;
 	    font-size: 16px;
 	    line-height: 20px;
@@ -898,10 +1028,6 @@
 	.main input[type=submit]{
 	    font-size: 16px;
 	    line-height: 20px;
-	}
-	.main textarea{
-		font-size: 16px;
-		line-height: 20px;
 	}
 
 }
@@ -929,6 +1055,34 @@
 
 }
 
+@media (max-width: 400px){
+
+	.main .destination .env8{
+		display: none;
+	}
+	.main .destination{
+		text-align: center;
+	}
+
+	.main .destination .env{
+		margin-left: 5%;
+		margin-right: 5%;
+	}
+	.main .destination .point img{
+		display: block;
+
+		width: 45px;
+		height: 45px;
+	}
+
+
+	.main .destination .env1{
+		margin-left: 0;
+	}
+	.main .destination .env9{
+		margin-right: 0;
+	}
+}
 
 @media  (max-width: 380px){
 	.main .categories .c{
@@ -939,18 +1093,24 @@
 		font-size: 18px;
 		line-height: 18px;
 		line-height: 16px;
-		padding-top: 30px;
-		padding-bottom: 30px;
+		padding-top: 20px;
+		padding-bottom: 20px;
+		padding-left: 4%;
+
+		background-position: 96% 50%;
+	}
+	.main .categories .c .this{
+		background-size: 20px 20px;
+		background-position: 96% 50%;
 	}
 
-	/*Туры*/
 
-	.main .destination .env{
-		margin-left: 0.8%;
-		margin-right: 0.8%;
+}
+
+@media (max-width: 376px){
+	.main  .sq2 .text{
+		line-height: 20px;
 	}
-
-
 }
 
 @media (max-width: 350px){
@@ -960,59 +1120,4 @@
 }
 
 
-@media (max-width: 320px){
-
-	.main .destination .env{
-		margin-left: 0.3%;
-		margin-right: 0.3%;
-	}
-}
-
-@media  (orientation: portrait) and (max-width: 320px){
-
-	.header h1{
-		font-size: 30px;
-		line-height: 34px;
-	}
-
-}
-
-@media (orientation: landscape) and (max-width: 320px){
-
-	.header h1{
-		font-size: 25px;
-		line-height: 30px;
-	}
-	.header p{
-		font-size: 16px;
-		line-height: 18px;
-	}
-
-	.main .categories .c a{
-		font-size: 16px;
-		line-height: 18px;
-		padding-bottom: 50px;
-	}
-
-}
-
-@media  (orientation: portrait) and (max-width: 240px){
-
-	.header h1{
-		font-size: 18px;
-		line-height: 22px;
-	}
-	.header p{
-		font-size: 14px;
-		line-height: 16px;
-	}
-
-	/*Форма брони*/
-
-	.main input[type=submit]{
-	    font-size: 13px;
-	    line-height: 20px;
-	}
-
-}
 
